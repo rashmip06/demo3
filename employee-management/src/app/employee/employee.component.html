@@ -1,0 +1,25 @@
+
+
+<table border="1">
+    <thead></thead>
+    <tr>
+      <th>EmployeeId</th>
+      <th>Parcel Name</th>
+      <th>Parcel ID</th>
+      <th>Receive time</th>
+      <th>Receive date</th>
+      <th></th>
+    </tr>
+    
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.empId}}</td>
+            
+            <td>{{employee.cname}}</td>
+            <td>{{employee.parcelID}}</td>
+            <td>{{employee.r_time}}</td>
+            <td>{{employee.r_date}}</td>
+            <td><button (click)="dashboardGo()" class = "btn btn-success">Collect</button></td>            
+          </tr>
+    </tbody>
+      </table>

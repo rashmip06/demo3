@@ -1,0 +1,18 @@
+<div class="container">
+
+    <div>
+        Date:
+        <br>
+        <input type="text" name="date" [(ngModel)]="user.date">
+        <br>
+
+        Time:
+        <br>
+        <input type="text" name="time" [(ngModel)]= "user.time">
+
+        <br>
+     
+    </div>
+    <button  (click)="scheduleLater(user)" class="btn btn-success" >Schedule</button>
+</div>
+
